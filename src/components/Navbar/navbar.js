@@ -14,22 +14,21 @@ const navbar = () => {
     
       <NavMenu>
       <img src='./logo.png' alt='logo'width={85} height={85}/>
-      <NavLink to="/Home" activeStyle>
-          Home
+      <NavLink to="/Anasayfa" activeStyle>
+          Ana Sayfa
         </NavLink>
-        <NavLink to="/about" activeStyle>
-          About
+        <NavLink to="/esnaflar" activeStyle>
+          Esnaflar Ozel
         </NavLink>
-        <NavLink to="/contact" activeStyle>
-          Contact Us
+        <NavLink to="/ogrenci" activeStyle>
+          Ogrenci Ozel
         </NavLink>
-        <NavLink to="/blogs" activeStyle>
-          Blogs
+        <NavLink to="/hakkinda" activeStyle>
+          Hakkinda
         </NavLink>
-        <NavLink to="/sign-up" activeStyle>
-          Sign Up
+        <NavLink to="/iletesim" activeStyle>
+          Iletesim
         </NavLink>
-        
       </NavMenu>
     </Nav>
   </>

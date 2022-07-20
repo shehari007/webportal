@@ -1,26 +1,27 @@
 //import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar} from './components';
 import { BrowserRouter as Router, Routes, Route}
     from 'react-router-dom';
 
-    import Home from './pages/home';
-    import About from './pages/about';
-    import Blogs from './pages/blogs';
-    import SignUp from './pages/signup';
-    import Contact from './pages/contact'
+    import AnaSayfa from './pages/anasayfa';
+    import Hakkinda from './pages/hakkinda';
+    import Esnaflar from './pages/esnaflar';
+    import Ogrenci from './pages/ogrenci';
+    import Iletesim from './pages/iletesim'
 
 function App() {
   return (
     <Router>
     <Navbar />
     <Routes>
-        <Route exact path='/'   element={<Home />} />
-        <Route path='/Home'  exact element={<Home />} />
-        <Route path='/about' element={<About/>} />
-        <Route path='/contact' element={<Contact/>} />
-        <Route path='/blogs' element={<Blogs/>} />
-        <Route path='/sign-up' element={<SignUp/>} />
+        <Route exact path='/'   element={<AnaSayfa />} />
+        <Route path='/Anasayfa'  exact element={<AnaSayfa />} />
+        <Route path='/hakkinda' element={<Hakkinda/>} />
+        <Route path='/iletesim' element={<Iletesim/>} />
+        <Route path='/esnaflar' element={<Esnaflar/>} />
+        <Route path='/ogrenci' element={<Ogrenci/>} />
     </Routes>
     </Router>
   );
