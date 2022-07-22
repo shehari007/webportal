@@ -20,51 +20,33 @@ const hakkinda = () => {
 
         <Accordion defaultActiveKey={['0']}style={{marginTop: '50px', marginBottom: '50px'}} >
           <Accordion.Item eventKey="0">
-            <Accordion.Header>Accordion Item #1</Accordion.Header>
+            <Accordion.Header>İÇERİĞİMİZ</Accordion.Header>
             <Accordion.Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.
+            BN TELEKOM şirketi kuruluşundan bugüne kadar yenilikçi hizmetlerini iletişim, içerik servisleri ve uygulamaları 
+            alanlarında telefon ve internet kanalları üzerinden vermektedir. Bu alanlardaki uzmanlığı ve kullandığı ileri teknolojiler 
+            ile birlikte BN TELEKOM, güvenilir ve yenilikçi katma değerli hizmetlerini hedeflenen son kullanıcılara, şirketlere ve 
+            ortaklarına sunabilmektedir.
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
-            <Accordion.Header>Accordion Item #2</Accordion.Header>
+            <Accordion.Header>VİZYONUMUZ</Accordion.Header>
             <Accordion.Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.
+            Bu platformun bir parçası olmak, bulurum.com online ticari rehberi Türkiye genelinde tüm bölgeler ve şehirlerde bütün iş
+             kollarında aradığınız detaylı ve cografi bilgiye ulaşmanızı sağlar. Bulurum.com'un esnek ve akıllı arama moturu, yararlı
+             yerel bilgileri müşteriler için hazır ve satın almaya uygun olarak sunar. Bulurum.com profesyonel online iletişim ve reklam
+               için kesinlikle gerekli bir araçtır.
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="2">
-            <Accordion.Header>Accordion Item #2</Accordion.Header>
+            <Accordion.Header>KURUMUMUZ</Accordion.Header>
             <Accordion.Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.
+            BN TELEKOM 2007 yılında Bilgi Teknolojileri ve İletişim Kurumu tarafından yetkilendirilmiş bir Rehberlik Hizmeti şirketidir ve bulurum.com internet sitesinin sahibidir.
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="3">
-            <Accordion.Header>Accordion Item #2</Accordion.Header>
+            <Accordion.Header>BAĞLANTI ADRESİMİZ</Accordion.Header>
             <Accordion.Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.
+            BN TELEKOM hakkında daha fazla bilgi almak için lütfen BN Telekom resmi websitesini ziyaret edin: www.bntelekom.com.tr
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
@@ -77,12 +59,15 @@ const hakkinda = () => {
         
       <CardGroup>
       <Card>
-        <Card.Img variant="top" src="/indir.jfif"style={{height: '400px',width: 'auto'}} />
+        <Card.Img variant="top" src="/dk.jpg"style={{height: '400px',width: 'auto'}} />
         <Card.Body>
-          <Card.Title>Card title</Card.Title>
+          <Card.Title>DELİKLİ TAŞ KAFE RESTURANT</Card.Title>
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
+          Siirt merkeze 4 kilometre mesafede bulunan ve Botan Vadisi üzerinde yer alan Rasıl Hacar-Delikli Taş, dünyada eşine az rastlanan karstik köprü görünümüne sahip bir doğa harikasıdır.
+
+İzinsiz veya kaynak gösterilmeden yayınlanamaz!
+https://www.medyasiirt.com/gundem/rasil-hacarda-huzur-var-h18415.html
+
           </Card.Text>
         </Card.Body>
         <Card.Footer>
@@ -92,10 +77,13 @@ const hakkinda = () => {
       <Card>
         <Card.Img variant="top" src="/sp.jpeg" style={{height: '400px',width: 'auto'}} />
         <Card.Body>
-          <Card.Title>Card title</Card.Title>
+          <Card.Title>SİİRT PARK AVM</Card.Title>
           <Card.Text>
-            This card has supporting text below as a natural lead-in to
-            additional content.{' '}
+          Türkiye’nin önde gelen mağazalarının yer aldığı Siirt Park AVM
+          , Üçyol A.Ş’nin yatırımcısı olduğu Siirt’te hizmete girmesiyle birlikte 
+          Siirtlilerin rahatça zaman geçirip, alışveriş yapabilecekleri yepyeni bir mekan olmayı hedefliyor.
+
+{' '}
           </Card.Text>
         </Card.Body>
         <Card.Footer>
@@ -105,11 +93,12 @@ const hakkinda = () => {
       <Card>
         <Card.Img variant="top" src="/bh.jpg" style={{height: '400px',width: 'auto'}} />
         <Card.Body>
-          <Card.Title>Card title</Card.Title>
+          <Card.Title>BARDEN HOTEL</Card.Title>
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This card has even longer content than the
-            first to show that equal height action.
+          Barden Hotel : Teras cafe gün boyunca nefis atıştırmalık , pizza ,pide , lahmacun , hamburger 
+          , Taze sıkılmış meyve suları ve kahve çeşitlerini yudumlayarak dostlarınızla hoşça vakit geçireceğiniz,
+           Büyüleyici gün batımı ve Siirt manzarası ile sizi karşılayan hatıralarınızda önemli bir yer alacak
+            unutulmaz mekandır.
           </Card.Text>
         </Card.Body>
         <Card.Footer>
