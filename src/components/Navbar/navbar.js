@@ -10,14 +10,11 @@ const navbar = () => {
   return (
     <>
     {['lg'].map((expand) => (
-        <Navbar key={expand} bg="dark" variant="dark" expand={expand} className="mb-3" style={{paddingBottom: '20px'}}>
+        <Navbar key={expand} bg="warning" variant="warning" expand={expand} className="mb-3" style={{paddingBottom: '20px'}}>
           <Container fluid>
-            <Navbar.Brand href="#" style={{marginLeft: '10px',align:'left'}}>
-              <a href='https://www.facebook.com/sharer.php?u=http://localhost:3000/anasayfa' target="_blank" rel="noopener noreferrer"><img src='/fbshare.png' alt='smallb' style={{height:'30px', width:'30px'}}/></a> 
-              <a href='https://www.instagram.com/' target="_blank" rel="noopener noreferrer"><img src='./inshare.png' alt="" style={{height: '30px', width:'30px'}}/></a>
-              <a href='https://www.snapchat.com/' target="_blank" rel="noopener noreferrer"><img src='./snshare.png' alt="" style={{height: '30px', width:'30px'}}/></a>
-              <a href='https://www.twitter.com/' target="_blank" rel="noopener noreferrer"><img src='./twshare.png' alt="" style={{height:'30px', width:'30px'}}/></a>
-              <a href='https://www.whatsapp.com/' target="_blank" rel="noopener noreferrer"><img src='./wpshare.png' alt="" style={{height:'30px', width:'30px'}}/></a>
+          <Navbar.Brand href="#" style={{marginLeft: '10px',align:'left'}}>
+              
+              
               </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
@@ -46,7 +43,7 @@ const navbar = () => {
                     className="me-2"
                     aria-label="Search"
                   />
-                  <Button variant="outline-success">Search</Button>
+                  <Button variant="danger">Search</Button>
                 </Form>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
