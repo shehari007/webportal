@@ -3,7 +3,8 @@ import Container from 'react-bootstrap/Container';
 
 const tab2 = () => {
   return (
-    <Container><div>
+    <Container>
+      <div>
         <h4>Yasal Uyarılar</h4>
         <br></br>
         <br></br>
