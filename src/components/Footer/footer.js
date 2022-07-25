@@ -31,7 +31,7 @@ const footer = () => {
             </p>
             <CDBBox flex="column" display="flex" style={{ cursor: 'pointer', padding: '0' }}>
               <CDBFooterLink href="/anasayfa">Ana Sayfa</CDBFooterLink>
-              <CDBFooterLink href="./components/Tabs/hakkimizda.js">Hakkimizda</CDBFooterLink>
+              <CDBFooterLink href="/hakkinda">Hakkimizda</CDBFooterLink>
               <CDBFooterLink href="/iletesim">Iletesim</CDBFooterLink>
               <CDBFooterLink href="/yasaluyari">Yasal Uyari</CDBFooterLink>
             </CDBBox>
