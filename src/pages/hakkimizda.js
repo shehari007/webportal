@@ -4,6 +4,8 @@ import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 import { TabContact,TabLegalNotice, Hakkimizda, Pazarpolitik} from '../components';
+
+
 const hakkimizda = () => {
   return (
     <Tab.Container id="left-tabs-example" defaultActiveKey="third">
