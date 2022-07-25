@@ -59,7 +59,7 @@ const hakkinda = () => {
         
       <CardGroup>
       <Card>
-        <Card.Img variant="top" src="/dk.jpg"style={{height: '400px',width: 'auto'}} />
+        <Card.Img variant="top" src="/he.jpg"style={{height: '400px',width: 'auto'}} />
         <Card.Body>
           <Card.Title>DELİKLİ TAŞ KAFE RESTURANT</Card.Title>
           <Card.Text>

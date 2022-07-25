@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 
-import { TabContact,TabLegalNotice, Hakkimizda} from '../components';
+import { TabContact,TabLegalNotice, Hakkimizda, Pazarpolitik} from '../components';
 
 const yasaluyari = () => {
   return (
@@ -27,6 +27,11 @@ const yasaluyari = () => {
                 Hakkimizda
               </Nav.Link>
             </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="fourth" href="#">
+              Pazarlama Politikası
+              </Nav.Link>
+            </Nav.Item>
           </Nav>
         </Col>
         <Col sm={9}>
@@ -39,6 +44,9 @@ const yasaluyari = () => {
             </Tab.Pane>
             <Tab.Pane eventKey="third">
               <Hakkimizda/>
+            </Tab.Pane>
+            <Tab.Pane eventKey="fourth">
+              <Pazarpolitik/>
             </Tab.Pane>
           </Tab.Content>
         </Col>

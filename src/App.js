@@ -10,6 +10,8 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
     import Ogrenci from './pages/ogrenci';
     import Iletesim from './pages/iletesim';
     import Yasal from './pages/yasaluyari';
+    import PazarPolitik from './pages/pazarpolitik';
+    import Hakkimizda from './pages/hakkimizda';
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
           <Route path='/esnaflar' element={<Esnaflar />} />
           <Route path='/ogrenci' element={<Ogrenci />} />
           <Route path='/yasaluyari' element={<Yasal />} />
+          <Route path='/pazarpolitik' element={<PazarPolitik />} />
+          <Route path='/hakkimizda' element={<Hakkimizda />} />
         </Routes>
 
       </div>
