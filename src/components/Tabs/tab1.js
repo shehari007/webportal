@@ -23,7 +23,7 @@ const tab1 = () => {
           <Form.Control as="textarea" rows={3} placeholder="yorum yaziniz.."/>
         </Form.Group>
         <Form.Group className="mb-3" id="formGridCheckbox">
-        <Form.Check type="checkbox" label="Yasal Uyarılar ve Kişisel Verilerin Korunması içeriklerini onaylıyorum." />
+        <Form.Check type="checkbox" label= "Yasal Uyarılar ve Kişisel Verilerin Korunması içeriklerini onaylıyorum"/>
       </Form.Group>
         <Button variant="success">Gonder</Button>{' '}
       </Form>
