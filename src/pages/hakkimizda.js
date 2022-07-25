@@ -1,16 +1,12 @@
 import React from 'react'
-import './iletesim.css';
-
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
-
-import { Hakkimizda, TabContact,TabLegalNotice, Pazarpolitik } from '../components';
-
-const iletesim = () => {
+import { TabContact,TabLegalNotice, Hakkimizda, Pazarpolitik} from '../components';
+const hakkimizda = () => {
   return (
-    <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+    <Tab.Container id="left-tabs-example" defaultActiveKey="third">
       <Row>
         <Col sm={3}>
           <Nav variant="pills" className="flex-column">
@@ -57,4 +53,4 @@ const iletesim = () => {
   )
 }
 
-export default iletesim
+export default hakkimizda
