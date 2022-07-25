@@ -3,10 +3,7 @@ import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import './anasayfa.css';
 import Table from 'react-bootstrap/Table';
-
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Container from 'react-bootstrap/Container';
 import CardGroup from 'react-bootstrap/CardGroup';
 
 const anasayfa = () => {
