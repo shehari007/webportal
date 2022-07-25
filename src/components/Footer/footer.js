@@ -44,6 +44,7 @@ const footer = () => {
               <CDBFooterLink href="/ogrenci">Ogrenci-Ozel</CDBFooterLink>
               <CDBFooterLink href="/esnaflar">Esnaflar</CDBFooterLink>
               <CDBFooterLink href="/">Kariyer</CDBFooterLink>
+              <CDBFooterLink href="/pazarpolitik">Pazarlama Politikası</CDBFooterLink>
             </CDBBox>
           </CDBBox>
           <CDBBox>
