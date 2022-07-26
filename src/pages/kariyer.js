@@ -3,12 +3,12 @@ import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
+
 import { TabContact,TabLegalNotice, Hakkimizda, Pazarpolitik, Kariyer} from '../components';
 
-
-const hakkimizda = () => {
+const kariyer = () => {
   return (
-    <Tab.Container id="left-tabs-example" defaultActiveKey="third">
+    <Tab.Container id="left-tabs-example" defaultActiveKey="fifth">
     <Row>
       <Col sm={3}>
         <Nav variant="pills" className="flex-column">
@@ -63,4 +63,4 @@ const hakkimizda = () => {
   )
 }
 
-export default hakkimizda
+export default kariyer
