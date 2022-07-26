@@ -43,7 +43,7 @@ const footer = () => {
             <CDBBox display="flex" flex="column" style={{ cursor: 'pointer', padding: '0' }}>
               <CDBFooterLink href="/ogrenci">Ogrenci-Ozel</CDBFooterLink>
               <CDBFooterLink href="/esnaflar">Esnaflar</CDBFooterLink>
-              <CDBFooterLink href="/">Kariyer</CDBFooterLink>
+              <CDBFooterLink href="/kariyer">Kariyer</CDBFooterLink>
               <CDBFooterLink href="/pazarpolitik">Pazarlama Politikası</CDBFooterLink>
             </CDBBox>
           </CDBBox>
