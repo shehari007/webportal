@@ -6,22 +6,21 @@ export default class database extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            deneme: [{}]
+            deneme: []
         };
     }
     getUsersData() {
         axios
-            .get(`/database`, [{}])
+            .get(`/database`, [])
             .then(res => {
-                 const data=res.data
+                 const data=[res.data]
                 
                 console.log(data)
                 //console.log(JSON.parse(data)["name"]);
-                const database = data.map(u =>
+                const database = [data].map(data =>
                     <div>
-                    <p>{(u.id)}</p>
-                    <p>{(u.name)}</p>
-                    
+                    <p key={"avm_id"}>{data}</p>
+                    <p key={"avm_adresi"}>{data}</p>
                     </div>
                     )
                 this.setState({database})
