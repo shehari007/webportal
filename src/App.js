@@ -12,6 +12,7 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
     import Yasal from './pages/yasaluyari';
     import PazarPolitik from './pages/pazarpolitik';
     import Hakkimizda from './pages/hakkimizda';
+    import Kariyer from './pages/kariyer';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path='/yasaluyari' element={<Yasal />} />
           <Route path='/pazarpolitik' element={<PazarPolitik />} />
           <Route path='/hakkimizda' element={<Hakkimizda />} />
+          <Route path='/kariyer' element={<Kariyer />}/>
         </Routes>
 
       </div>

@@ -6,3 +6,4 @@ export {default as TabLegalNotice} from './Tabs/tab2';
 export {default as Footer} from './Footer/footer';
 export {default as Hakkimizda} from './Tabs/hakkimizda';
 export {default as Pazarpolitik} from './Tabs/pazarpol';
+export {default as Kariyer} from './Tabs/kariyer';
