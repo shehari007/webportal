@@ -9,3 +9,22 @@
 
     
 }
+.logo_cont{
+    margin-top: 2rem;
+    border: 20px;
+    border-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.logo_cont img{
+    width: auto;
+    height: auto;
+}
+.logo_txt{
+    background-color: silver;
+    margin-left: 0.5rem;
+    width: auto;
+    height: auto;
+}

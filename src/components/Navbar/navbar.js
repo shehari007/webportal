@@ -29,9 +29,11 @@ const navbar = () => {
             <Offcanvas.Body>
               <Nav className="justify-content-center flex-grow-1 pe-3">
                 <Nav.Link href="/anasayfa">AnaSayfa</Nav.Link>
-                <Nav.Link href="/esnaflar">Esnaflar-Ozel</Nav.Link>
-                <Nav.Link href="/ogrenci">Ogrenci-Ozel</Nav.Link>
+                <Nav.Link href="/esnaflar">Esnaflar</Nav.Link>
+                <Nav.Link href="/ogrenci">Ogrenci Ozel</Nav.Link>
                 <Nav.Link href="/hakkinda">Hakkimizda</Nav.Link>
+                <Nav.Link href="/konaklama">Konaklama</Nav.Link>
+                <Nav.Link href="#">Gezilecek Yerler</Nav.Link>
                 <Nav.Link href="/iletesim">Iletesim-gec</Nav.Link>
 
               </Nav>
