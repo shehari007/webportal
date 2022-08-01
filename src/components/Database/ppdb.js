@@ -1,8 +1,9 @@
-import axios from '../../axios'
+import axios from './axios_api/axios-pp'
 import React, { Component } from 'react'
 
 
-export default class database extends Component {
+
+export default class ppdb extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -13,15 +14,17 @@ export default class database extends Component {
         axios
             .get(`/database`, [])
             .then(res => {
-                 const data=[res.data]
-                
+                const data=res.data
                 console.log(data)
-                //console.log(JSON.parse(data)["name"]);
-                const database = [data].map(data =>
-                    <div>
-                    <p key={"avm_id"}>{data}</p>
-                    <p key={"avm_adresi"}>{data}</p>
-                    </div>
+                
+
+               
+                const database = data.map((data, index) =>
+                {
+                    return <div>
+                        <h4>{data.DATA_heading}</h4><br/><p style={{whiteSpace: 'pre-wrap'}} key={index}>{data.DATA_aciklama}
+                    </p><a href={data.DATA_web_adresi}target="_blank" rel="noopener noreferrer">{data.DATA_web_adresi}</a></div>
+                }
                     )
                 this.setState({database})
 

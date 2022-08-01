@@ -1,8 +1,8 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Navbar,BrandBar,Footer,Searchbar} from './components';
+import {Navbar,BrandBar,Footer} from './components';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-    
+import 'bootstrap/dist/css/bootstrap.min.css';  
 
     import AnaSayfa from './pages/anasayfa';
     import Hakkinda from './pages/hakkinda';
@@ -11,19 +11,20 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
     import Iletesim from './pages/iletesim';
     import Yasal from './pages/yasaluyari';
     import PazarPolitik from './pages/pazarpolitik';
+    import Konaklama from './pages/konaklama';
     import Hakkimizda from './pages/hakkimizda';
     import Kariyer from './pages/kariyer';
+    import AnderaDB from './pages/About_Pages/ANDERA_ab';
+    import BardenOT from './pages/About_Pages/BARDENO_ab';
+    import PARKFIT from './pages/About_Pages/SIIRTFIT';
 
 function App() {
   return (
     <><Router>
       <div>
         <BrandBar />
-        <Searchbar />
+        
         <Navbar />
-        
-        
-        
 
         <Routes>
           <Route exact path='/' element={<AnaSayfa />} />
@@ -34,8 +35,12 @@ function App() {
           <Route path='/ogrenci' element={<Ogrenci />} />
           <Route path='/yasaluyari' element={<Yasal />} />
           <Route path='/pazarpolitik' element={<PazarPolitik />} />
+          <Route path='/konaklama' element={<Konaklama />} />
           <Route path='/hakkimizda' element={<Hakkimizda />} />
           <Route path='/kariyer' element={<Kariyer />}/>
+          <Route path='/andera_ab' element={<AnderaDB />} />
+          <Route path='/barden_otel' element={<BardenOT />} />
+          <Route path='/siirt_park_fit' element={<PARKFIT />} />
         </Routes>
 
       </div>
