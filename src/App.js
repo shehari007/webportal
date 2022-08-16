@@ -1,6 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Navbar,BrandBar,Footer} from './components';
+import {Navbar,BrandBar,Footer, Searchbar} from './components';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';  
 
@@ -15,17 +15,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
     import Hakkimizda from './pages/hakkimizda';
     import Kariyer from './pages/kariyer';
     import AnderaDB from './pages/About_Pages/ANDERA_ab';
-    import BardenOT from './pages/About_Pages/BARDENO_ab';
+    import BardenOT from './pages/About_Pages/ornek';
     import PARKFIT from './pages/About_Pages/SIIRTFIT';
+
 
 function App() {
   return (
     <><Router>
       <div>
         <BrandBar />
-        
         <Navbar />
-
+        <Searchbar/>
         <Routes>
           <Route exact path='/' element={<AnaSayfa />} />
           <Route path='/Anasayfa' exact element={<AnaSayfa />} />
@@ -39,13 +39,13 @@ function App() {
           <Route path='/hakkimizda' element={<Hakkimizda />} />
           <Route path='/kariyer' element={<Kariyer />}/>
           <Route path='/andera_ab' element={<AnderaDB />} />
-          <Route path='/barden_otel' element={<BardenOT />} />
+          <Route path='/hakkinda/:id' element={<BardenOT/>}/>
           <Route path='/siirt_park_fit' element={<PARKFIT />} />
         </Routes>
 
       </div>
 
-    </Router><Footer /></>
+    </Router><Footer/></>
   );
 }
 

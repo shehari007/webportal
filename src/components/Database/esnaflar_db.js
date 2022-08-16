@@ -29,10 +29,11 @@ export default class database extends Component {
                             <tr>
                             
                             <td key={index}>{index+1}</td>
-                            <td key={index}>{data.isletme_adi}</td>
+                            <td key={index}><a style={{textDecoration: 'underline', color: 'white'}} href={data.hak_adresi} target="_blank" rel="noopener noreferrer">{data.isletme_adi}</a></td>
                             <td key={index} ><img src='/placeholder.png' height="20px" width="20px" alt=''/>
-                            <a style={{textDecoration: 'underline', color: 'white'}} href="http://localhost:3000/konaklama" target="_blank" rel="noopener noreferrer">{data.isletme_adres}</a></td>
+                            <a style={{textDecoration: 'underline', color: 'white'}} href={data.harita_adresi} target="_blank" rel="noopener noreferrer">{data.isletme_adres}</a></td>
                             <td key={index}>{data.isletme_sabit_tel}</td>
+                            <td key={index} >{data.calisma_saatler}</td>
                             <td key={index}><a href={data.isletim_web_adresi}target="_blank" rel="noopener noreferrer">{data.isletim_web_adresi}</a></td>
                             </tr>
                             </tbody>
@@ -66,6 +67,7 @@ export default class database extends Component {
                                 <th>ADI</th>
                                 <th>ADRES</th>
                                 <th><img src='/phone.png' height="20px" width="20px" alt=''/>  TELEFON</th>
+                                <th>Calisma Saatler</th>
                                 <th><img src='/globe-grid.png' height="20px" width="20px" alt=''/> WEB-ADRESI</th>
                             </tr>
                         </thead>

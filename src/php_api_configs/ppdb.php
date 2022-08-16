@@ -3,7 +3,7 @@ header("Access-Control-Allow-Origin: *");
 header('Content-Type: application/json; charset=utf-8');
 include 'config_db.php';
 
-$sql = "SELECT DATA_aciklama, DATA_web_adresi, DATA_heading FROM isletmeler WHERE DATA_heading = 'Pazarlama Politikasi'";
+$sql = "SELECT DATA_aciklama, DATA_web_adresi, DATA_heading FROM isletmeler WHERE DATA_heading = 'Pazarlama Politikası'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {

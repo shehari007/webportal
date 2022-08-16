@@ -24,59 +24,48 @@ export default class database extends Component {
             deneme: []
         };
     }
-    getUsersData() {
+    getUserCard1() {
         axios_c1
-            .get(`/database`, [])
+            .get(`/card1`, [])
             .then(res => {
                 const data=res.data
                 console.log(data)
-                const database = data.map((data) =>
+                const card1 = data.map((data) =>
                 {
                     
                     return <>
-                    <Card.Title style={{textDecoration: 'underline'}}>{data.isletme_adi}</Card.Title>
-                    <Card.Text>
-                    <img src='/placeholder.png' height="20px" width="20px" alt=''/>
-                    <a href={data.harita_adresi}target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none', color: 'red'}}>
-                    {data.isletme_adres} 
-                    </a>
-                     
-                    </Card.Text>
-                    </>
-                }
-                    
-                    )
-                this.setState({database})
-
-            })
-            .catch((error) => {
-                console.log(error)
-            })
-
-    }
-
-    getUsersData1() {
-        axios_c1
-            .get(`/database1`, [])
-            .then(res => {
-                const data=res.data
-                console.log(data)  
-                const database1 = data.map((data) =>    
-                {
-                    
-                    return <>
-                    <ListGroup.Item ><img src='/phone.png' height="20px" width="20px" alt=''/> {data.isletme_sabit_tel}</ListGroup.Item>
-                    <ListGroup.Item>
-                    <img src='/globe-grid.png' height="20px" width="20px" alt=''/>
-                        <a href={data.isletim_web_adresi}target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}  >
-                         {data.isletim_web_adresi}
+               
+                        
+                        <Card.Img variant="top" src={data.img_1}alt="cardimg" style={{height: '400px',width: 'auto'}}/>
+                        <Card.Body>
+                        <Card.Title style={{textDecoration: 'underline'}}>{data.isletme_adi}</Card.Title>
+                        <Card.Text>
+                        <img src='/placeholder.png' height="20px" width="20px" alt=''/>
+                        <a href={data.harita_adresi}target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none', color: 'red'}}>
+                        {data.isletme_adres} 
                         </a>
-                    </ListGroup.Item>
-                    </>
+                        
+                        </Card.Text>
+                        </Card.Body>
+                        <ListGroup className="list-group-flush">
+                        <ListGroup.Item ><img src='/phone.png' height="20px" width="20px" alt=''/> {data.isletme_sabit_tel}</ListGroup.Item>
+                        <ListGroup.Item>
+                        <img src='/globe-grid.png' height="20px" width="20px" alt=''/>
+                            <a href={data.isletim_web_adresi}target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}  >
+                             {data.isletim_web_adresi}
+                            </a>
+                        </ListGroup.Item>
+                        </ListGroup>
+                            <Card.Body>
+                            <Button variant="warning" href={data.hak_adresi}>Daha oku..</Button>{' '}
+                            </Card.Body>
+                        
+                        </>
+
                 }
                     
                     )
-                this.setState({database1})
+                this.setState({card1})
 
             })
             .catch((error) => {
@@ -85,60 +74,42 @@ export default class database extends Component {
 
     }
 
-
-
-    getUsersData_c2_t_a() {
+    getUserCard2() {
         axios_c2
-            .get(`/c2_t_a`, [])
+            .get(`/card2`, [])
             .then(res => {
                 const data=res.data
                 console.log(data)
-                const c2_t_a = data.map((data) =>
+                const card2 = data.map((data) =>
                 {
                     
                     return <>
+                    <Card.Img variant="top" src={data.img_2} style={{height: '400px',width: 'auto'}}/>
+                    <Card.Body>
                     <Card.Title style={{textDecoration: 'underline'}}>{data.isletme_adi}</Card.Title>
                     <Card.Text>
                     <img src='/placeholder.png' height="20px" width="20px" alt=''/>
                     <a href={data.harita_adresi}target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none', color: 'red'}}>
                     {data.isletme_adres} 
                     </a>
-                     
                     </Card.Text>
-                    </>
-                }
-                    
-                    )
-                this.setState({c2_t_a})
-
-            })
-            .catch((error) => {
-                console.log(error)
-            })
-
-    }
-
-    getUsersData_c2_st_w() {
-        axios_c2
-            .get(`/c2_st_w`, [])
-            .then(res => {
-                const data=res.data
-                console.log(data)  
-                const c2_st_w = data.map((data) =>    
-                {
-                    
-                    return <>
+                    </Card.Body>
+                    <ListGroup className="list-group-flush">
                     <ListGroup.Item><img src='/phone.png' height="20px" width="20px" alt=''/> {data.isletme_sabit_tel}</ListGroup.Item>
                     <ListGroup.Item>
                         <a href={data.isletim_web_adresi}target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}  >
                         {data.isletim_web_adresi}
                         </a>
                     </ListGroup.Item>
+                    </ListGroup>
+                    <Card.Body>
+                    <Button variant="warning" href={data.hak_adresi}>Daha oku..</Button>{' '}
+                    </Card.Body>
                     </>
                 }
                     
                     )
-                this.setState({c2_st_w})
+                this.setState({card2})
 
             })
             .catch((error) => {
@@ -147,58 +118,43 @@ export default class database extends Component {
 
     }
 
-    getUsersData_c3_t_a() {
+
+    getUserCard3() {
         axios_c3
-            .get(`/c3_t_a`, [])
+            .get(`/card3`, [])
             .then(res => {
                 const data=res.data
                 console.log(data)
-                const c3_t_a = data.map((data) =>
+                const card3 = data.map((data) =>
                 {
                     
                     return <>
+                    <Card.Img variant="top" src={data.img_1} style={{height: '400px',width: 'auto'}}/>
+                    <Card.Body>
                     <Card.Title style={{textDecoration: 'underline'}}>{data.isletme_adi}</Card.Title>
                     <Card.Text>
                     <img src='/placeholder.png' height="20px" width="20px" alt=''/>
                     <a href={data.harita_adresi}target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none', color: 'red'}}>
                     {data.isletme_adres} 
                     </a>
-                     
                     </Card.Text>
-                    </>
-                }
-                    
-                    )
-                this.setState({c3_t_a})
-
-            })
-            .catch((error) => {
-                console.log(error)
-            })
-
-    }
-
-    getUsersData_c3_st_w() {
-        axios_c3
-            .get(`/c3_st_w`, [])
-            .then(res => {
-                const data=res.data
-                console.log(data)  
-                const c3_st_w = data.map((data) =>    
-                {
-                    
-                    return <>
+                    </Card.Body>
+                    <ListGroup className="list-group-flush">
                     <ListGroup.Item><img src='/phone.png' height="20px" width="20px" alt=''/> {data.isletme_sabit_tel}</ListGroup.Item>
                     <ListGroup.Item>
                         <a href={data.isletim_web_adresi}target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}  >
                         {data.isletim_web_adresi}
                         </a>
                     </ListGroup.Item>
+                    </ListGroup>
+                    <Card.Body>
+                    <Button variant="warning" href={data.hak_adresi}>Daha oku..</Button>{' '}
+                    </Card.Body>
                     </>
                 }
                     
                     )
-                this.setState({c3_st_w})
+                this.setState({card3})
 
             })
             .catch((error) => {
@@ -207,59 +163,45 @@ export default class database extends Component {
 
     }
 
+   
 
-    getUsersData_c4_t_a() {
+
+    getUserCard4() {
         axios_c4
-            .get(`/c4_t_a`, [])
+            .get(`/card4`, [])
             .then(res => {
                 const data=res.data
                 console.log(data)
-                const c4_t_a = data.map((data) =>
+                const card4= data.map((data) =>
                 {
                     
                     return <>
+                   <Card.Img variant="top" src={data.img_1} style={{height: '400px',width: 'auto'}}/>
+                    <Card.Body>
                     <Card.Title style={{textDecoration: 'underline'}}>{data.isletme_adi}</Card.Title>
                     <Card.Text>
                     <img src='/placeholder.png' height="20px" width="20px" alt=''/>
                     <a href={data.harita_adresi}target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none', color: 'red'}}>
                     {data.isletme_adres} 
                     </a>
-                     
                     </Card.Text>
-                    </>
-                }
-                    
-                    )
-                this.setState({c4_t_a})
-
-            })
-            .catch((error) => {
-                console.log(error)
-            })
-
-    }
-
-    getUsersData_c4_st_w() {
-        axios_c4
-            .get(`/c4_st_w`, [])
-            .then(res => {
-                const data=res.data
-                console.log(data)  
-                const c4_st_w = data.map((data) =>    
-                {
-                    
-                    return <>
+                    </Card.Body>
+                    <ListGroup className="list-group-flush">
                     <ListGroup.Item><img src='/phone.png' height="20px" width="20px" alt=''/> {data.isletme_sabit_tel}</ListGroup.Item>
                     <ListGroup.Item>
                         <a href={data.isletim_web_adresi}target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}  >
                         {data.isletim_web_adresi}
                         </a>
                     </ListGroup.Item>
+                    </ListGroup>
+                    <Card.Body>
+                    <Button variant="warning" href={data.hak_adresi}>Daha oku..</Button>{' '}
+                    </Card.Body>
                     </>
                 }
                     
                     )
-                this.setState({c4_st_w})
+                this.setState({card4})
 
             })
             .catch((error) => {
@@ -267,6 +209,8 @@ export default class database extends Component {
             })
 
     }
+
+  
 
 
     getUsersData_tab_saglik() {
@@ -279,8 +223,8 @@ export default class database extends Component {
                 {
                     
                     return <>
-                    <ul style={{display: 'inline-block', textDecoration: 'none',  justifyContent: 'space-between'}}>
-                        <li>{data.isletme_adi}</li>
+                    <ul style={{display: 'inline-block', textDecoration: 'underline',  justifyContent: 'space-between'}}>
+                    <li> <a href={data.hak_adresi} target="_blank" rel="noopener noreferrer"style={{textDecoration: 'none', color:'black'}}>{data.isletme_adi}</a></li>
                     </ul>
                     
                     </>
@@ -306,8 +250,8 @@ export default class database extends Component {
                 {
                     
                     return <>
-                    <ul style={{display: 'inline-block', textDecoration: 'none',  justifyContent: 'space-between'}}>
-                        <li>{data.isletme_adi}</li>
+                    <ul style={{display: 'inline-block', textDecoration: 'underline',  justifyContent: 'space-between'}}>
+                    <li> <a href={data.hak_adresi} target="_blank" rel="noopener noreferrer"style={{textDecoration: 'none', color:'black'}}>{data.isletme_adi}</a></li>
                     </ul>
                     
                     </>
@@ -333,8 +277,8 @@ export default class database extends Component {
                 {
                     
                     return <>
-                    <ul style={{display: 'inline-block', textDecoration: 'none',  justifyContent: 'space-between'}}>
-                        <li>{data.isletme_adi}</li>
+                    <ul style={{display: 'inline-block', textDecoration: 'underline',  justifyContent: 'space-between'}}>
+                    <li> <a href={data.hak_adresi} target="_blank" rel="noopener noreferrer"style={{textDecoration: 'none', color:'black'}}>{data.isletme_adi}</a></li>
                     </ul>
                     
                     </>
@@ -360,8 +304,8 @@ export default class database extends Component {
                 {
                     
                     return <>
-                    <ul style={{display: 'inline-block', textDecoration: 'none',  justifyContent: 'space-between'}}>
-                        <li>{data.isletme_adi}</li>
+                    <ul style={{display: 'inline-block', textDecoration: 'underline',  justifyContent: 'space-between'}}>
+                    <li> <a href={data.hak_adresi} target="_blank" rel="noopener noreferrer"style={{textDecoration: 'none', color:'black'}}>{data.isletme_adi}</a></li>
                     </ul>
                     
                     </>
@@ -379,14 +323,10 @@ export default class database extends Component {
 
 
     componentDidMount(){
-        this.getUsersData()
-        this.getUsersData1()
-        this.getUsersData_c2_t_a()
-        this.getUsersData_c2_st_w()
-        this.getUsersData_c3_t_a()
-        this.getUsersData_c3_st_w()
-        this.getUsersData_c4_t_a()
-        this.getUsersData_c4_st_w()
+        this.getUserCard1()
+        this.getUserCard2()
+        this.getUserCard3()
+        this.getUserCard4()
         this.getUsersData_tab_saglik()
         this.getUsersData_tab_avmler()
         this.getUsersData_tab_spors()
@@ -402,78 +342,43 @@ export default class database extends Component {
             <div>
 
             <CardGroup>
-            <Card >
-            <Card.Img variant="top" src="/Ap.jpg" style={{height: '400px',width: 'auto'}}/>
-            <Card.Body>
-              {this.state.database}
-            </Card.Body>
-            <ListGroup className="list-group-flush">
-              {this.state.database1}
-            </ListGroup>
-            <Card.Body>
-            <Button variant="warning" href="/andera_ab">Daha oku..</Button>{' '}
-            </Card.Body>
+            
+            <Card>
+            {this.state.card1}
             </Card>
 
-            <Card   >
-            <Card.Img variant="top" src="/bh.jpg" style={{height: '400px',width: 'auto'}}/>
-            <Card.Body>
-              {this.state.c2_t_a}
-            </Card.Body>
-            <ListGroup className="list-group-flush">
-              {this.state.c2_st_w}
-            </ListGroup>
-            <Card.Body>
-            <Button variant="warning" href="/barden_otel">Daha oku..</Button>{' '}
-            </Card.Body>
+            <Card>
+            {this.state.card2}           
             </Card>
 
             <Card >
-            <Card.Img variant="top" src="/spf.jpg" style={{height: '400px',width: 'auto'}}/>
-            <Card.Body>
-              {this.state.c3_t_a}
-            </Card.Body>
-            <ListGroup className="list-group-flush">
-              {this.state.c3_st_w}
-            </ListGroup>
-            <Card.Body>
-            <Button variant="warning" href="/siirt_park_fit">Daha oku..</Button>{' '}
-            </Card.Body>
+            {this.state.card3}
             </Card>
 
             <Card  >
-            <Card.Img variant="top" src="/co.jpg" style={{height: '400px',width: 'auto'}}/>
-            <Card.Body>
-              {this.state.c4_t_a}
-            </Card.Body>
-            <ListGroup className="list-group-flush">
-              {this.state.c4_st_w}
-            </ListGroup>
-            <Card.Body>
-            <Button variant="warning" href="/konaklama">Daha oku..</Button>{' '}
-            </Card.Body>
+            {this.state.card4}
             </Card>
             </CardGroup>
             </div>
 
             <div style={{marginTop: '20px', border: '1px solid',borderColor: '#D3D3D3', textDecoration: 'underline'}}variant="secondary">
-            <h3 align="center"marginTop="20px">Populer Aramalar</h3>
+            <div style={{marginTop: '20px'}}><h3 align="center"marginTop="20px">Populer Aramalar</h3></div>
             <br></br>
             <Tabs defaultActiveKey="1" id="justify-tab-example" className="mb-3" justify style={{fontWeight: 'bold', backgroundColor: 'transparent'}}>
                 <Tab eventKey="1" title={<div>
-                    <TAB_ICO1/>{"SAGLIK"}</div>} >
+                    <TAB_ICO1/><br/>{"SAGLIK"}</div>} style={{margin: '50px'}} >
                     {this.state.tab_saglik}
                 </Tab>
                 <Tab eventKey="2" title={<span>
-                    <TAB_ICO2/>{"AVMLER"}</span>}>
+                    <TAB_ICO2/><br/>{"AVMLER"}</span>}style={{margin: '50px'}}>
                     {this.state.tab_avmler}
                 </Tab>
                 <Tab eventKey="3" title={<span>
-                    <TAB_ICO3/>{"SPOR"}</span>}>
+                    <TAB_ICO3/><br/>{"SPOR"}</span>}style={{margin: '50px'}}>
                     {this.state.tab_spors}
                 </Tab>
                 <Tab eventKey="4" title={<span>
-                    <TAB_ICO4/>{"MARKETLER"}</span>}>
+                    <TAB_ICO4/><br/>{"MARKETLER"}</span>}style={{margin: '50px'}}>
                    {this.state.tab_marketler}
                 </Tab>
             </Tabs>
