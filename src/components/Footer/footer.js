@@ -4,6 +4,7 @@ import { CDBFooter, CDBFooterLink, CDBBox, CDBBtn, CDBIcon } from 'cdbreact';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import './footer.css';
+import { Link } from 'react-router-dom';
 
 
 const footer = () => {

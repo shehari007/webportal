@@ -1,4 +1,5 @@
-import axios from '..//../components/Database/axios_api/card_axios/card2_axios';
+//import axios from '..//../components/Database/axios_api/card_axios/card2_axios';
+import axios from 'axios';
 import React, { Component } from 'react'
 import Container from 'react-bootstrap/Container';
 import ListGroup from 'react-bootstrap/ListGroup';
@@ -7,7 +8,7 @@ import Image from 'react-bootstrap/Image';
 
 
 
-export default class ANDERA_ab extends Component{
+export default class BARDENO_ab extends Component{
     constructor(props) {
         super(props);
         this.state = {
@@ -15,43 +16,12 @@ export default class ANDERA_ab extends Component{
         };
     }
     getUsersData() {
-        axios
-            .get(`/database`, [])
-            .then(res => {
-                const data=res.data
-                console.log(data)
-                
-                
-                
-                const database = data.map((data, index) =>
-                
-                {
-                    
-                    return<>
-
-                    <ListGroup.Item><h1>{data.isletme_adi}</h1></ListGroup.Item>
-                    <ListGroup.Item><h5>
-                      <img src='/placeholder.png' height="25px" width="25px" alt=''/>
-                      <a href={data.harita_adresi}target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none', color:'red'}}>
-                        {data.isletme_adres}
-                      </a></h5>
-                    </ListGroup.Item>
-
-                    <ListGroup.Item><h5>
-                    <img src='/phone.png' height="25px" width="25px" alt=''/>
-                      {data.isletme_sabit_tel}</h5>
-                    </ListGroup.Item>
-                    
-                        </>                   
-                }
-                    
-                    )
-                this.setState({database})
-
-            })
-            .catch((error) => {
-                console.log(error)
-            })
+        //const instance =  axios.create({
+            //baseURL: 'http://localhost/card2_db_api.php?id=2'
+        //});
+        axios.get('http://localhost/card2_db_api.php?id=2').then(async function (response) {
+            console.log(response);  })
+        
 
     }
 
@@ -62,7 +32,9 @@ export default class ANDERA_ab extends Component{
                 const data=res.data
                 console.log(data)
                 
-                
+                const res = await axios.get('localhost/card2_db_api.php/get', { params: { isletme_id: 15 } });
+
+                res.data.args;
                 
                 const databaseframe = data.map((data, index) =>
                 
