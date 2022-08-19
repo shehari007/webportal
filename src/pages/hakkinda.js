@@ -13,7 +13,7 @@ const hakkinda = () => {
 
     //Accordion components---------------------------------------------------------------------------------
     <>
-    <Container>
+    
       <div className='acc_container'> 
       <div className='acc_box'>
         
@@ -22,9 +22,9 @@ const hakkinda = () => {
           <Accordion.Item eventKey="0">
             <Accordion.Header>İÇERİĞİMİZ</Accordion.Header>
             <Accordion.Body>
-            BN TELEKOM şirketi kuruluşundan bugüne kadar yenilikçi hizmetlerini iletişim, içerik servisleri ve uygulamaları 
+            Findme.com şirketi kuruluşundan bugüne kadar yenilikçi hizmetlerini iletişim, içerik servisleri ve uygulamaları 
             alanlarında telefon ve internet kanalları üzerinden vermektedir. Bu alanlardaki uzmanlığı ve kullandığı ileri teknolojiler 
-            ile birlikte BN TELEKOM, güvenilir ve yenilikçi katma değerli hizmetlerini hedeflenen son kullanıcılara, şirketlere ve 
+            ile birlikte Findme.com, güvenilir ve yenilikçi katma değerli hizmetlerini hedeflenen son kullanıcılara, şirketlere ve 
             ortaklarına sunabilmektedir.
             </Accordion.Body>
           </Accordion.Item>
@@ -32,21 +32,21 @@ const hakkinda = () => {
             <Accordion.Header>VİZYONUMUZ</Accordion.Header>
             <Accordion.Body>
             Bu platformun bir parçası olmak, bulurum.com online ticari rehberi Türkiye genelinde tüm bölgeler ve şehirlerde bütün iş
-             kollarında aradığınız detaylı ve cografi bilgiye ulaşmanızı sağlar. Bulurum.com'un esnek ve akıllı arama moturu, yararlı
-             yerel bilgileri müşteriler için hazır ve satın almaya uygun olarak sunar. Bulurum.com profesyonel online iletişim ve reklam
+             kollarında aradığınız detaylı ve cografi bilgiye ulaşmanızı sağlar. Findme.com'un esnek ve akıllı arama moturu, yararlı
+             yerel bilgileri müşteriler için hazır ve satın almaya uygun olarak sunar. Findme.com profesyonel online iletişim ve reklam
                için kesinlikle gerekli bir araçtır.
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="2">
             <Accordion.Header>KURUMUMUZ</Accordion.Header>
             <Accordion.Body>
-            BN TELEKOM 2007 yılında Bilgi Teknolojileri ve İletişim Kurumu tarafından yetkilendirilmiş bir Rehberlik Hizmeti şirketidir ve bulurum.com internet sitesinin sahibidir.
+            Findme.com 2007 yılında Bilgi Teknolojileri ve İletişim Kurumu tarafından yetkilendirilmiş bir Rehberlik Hizmeti şirketidir ve bulurum.com internet sitesinin sahibidir.
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="3">
             <Accordion.Header>BAĞLANTI ADRESİMİZ</Accordion.Header>
             <Accordion.Body>
-            BN TELEKOM hakkında daha fazla bilgi almak için lütfen BN Telekom resmi websitesini ziyaret edin: www.bntelekom.com.tr
+            Findme.com hakkında daha fazla bilgi almak için lütfen BN Telekom resmi websitesini ziyaret edin: www.findme.com
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
@@ -108,7 +108,7 @@ https://www.medyasiirt.com/gundem/rasil-hacarda-huzur-var-h18415.html
     </CardGroup>
 
       </div>
-      </Container>
+      
       </>
    
 

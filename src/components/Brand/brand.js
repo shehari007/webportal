@@ -7,17 +7,17 @@ const brand = () => {
   return (
     <>
     
-       <Navbar bg="dark" variant="dark">
+       <Navbar bg="dark" variant="dark" >
         <Container>
           <Navbar.Brand href="/anasayfa" style={{fontWeight: "bold", marginTop: "10px",fontSize: "25px"}}>
             <img
               alt=""
               src="/logol.png"
-              width="50"
-              height="50"
+              width="40"
+              height="40"
               className="d-inline-block align-top"
             />{' '}
-            Bulurum.com
+            Findme.com
           </Navbar.Brand>
           <h4 style={{color:'#ffff',fontSize:'15px', marginTop:'5px'}}>
           <img src='./callus.png' alt="" style={{height:'30px', width:'30px'}}/>952-2265-2255
