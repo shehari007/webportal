@@ -3,7 +3,7 @@ header("Access-Control-Allow-Origin: *");
 header('Content-Type: application/json; charset=utf-8');
 include 'config_db.php';
 
-$sql = "SELECT *  FROM isletmeler WHERE isletme_id = '21'";
+$sql = "SELECT *  FROM isletmeler WHERE isletme_id = '97'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {

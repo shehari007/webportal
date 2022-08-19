@@ -9,7 +9,7 @@ const navbar = () => {
   return (
     <>
     {['md'].map((expand) => (
-        <><Navbar key={expand} bg="warning" expand={expand} className="mb-3" style={{ paddingBottom: '20px', paddingTop: '20px', fontWeight: '650' }}>
+        <><Navbar key={expand} bg="primary" expand={expand} className="mb-3" style={{ paddingBottom: '20px', paddingTop: '20px', fontWeight: '600'}}>
         <Container fluid>
           <Navbar.Brand href="#" style={{ marginLeft: '10px', align: 'left' }}>
 

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import Container from 'react-bootstrap/Container';
 
 export default class LiveSearch extends Component {
   constructor(props) {
@@ -45,7 +46,7 @@ export default class LiveSearch extends Component {
 
     // Make GET request with token
     await axios
-      .get('http://localhost/tum_hakkinda.php?searchtext='+searchtext, {
+      .get('http://localhost/tum_hakkinda.php?searchtext=' + searchtext, {
         cancelToken: this.cancelToken.token,
       })
       .then((res) => {
@@ -74,21 +75,31 @@ export default class LiveSearch extends Component {
 
   render() {
     return (
-      <div className="livesearch">
-        <input
-          onClick={this.inputFocus}
-          ref={this.node}
-          onChange={this.onValChange}
-          type="text" id="searchtext"
-          placeholder="Search ..."
-        />
-        {/* {this.state.message} */}
-        <ul className="list">
-          {this.state.userList.map((item, index) => {
-            return <li key={index}>{item.isletme_adi}</li>
-          })}
-        </ul>
+      <div className="row">
+        <div className="col">
+          <div className="livesearch">
+            <input
+              class="form-control"
+              style={{width: '102%', marginLeft: '-1%'}}
+              
+              onClick={this.inputFocus}
+              ref={this.node}
+              onChange={this.onValChange}
+              type="text" id="searchtext"
+              placeholder="sehir isim, esnaf, avmler, kafeler, otel, gezilecek yerler ara...."
+              size="50"
+
+            />
+            {/* {this.state.message} */}
+            <ul className="list">
+              {this.state.userList.map((item, index) => {
+                return <li key={index}>{item.isletme_adi}</li>
+              })}
+            </ul>
+          </div>
+        </div>
       </div>
+
     )
   }
 }

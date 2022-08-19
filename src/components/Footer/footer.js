@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 const footer = () => {
   return (
     
-    <CDBFooter className="shadow" style={{ backgroundColor: '#ffc107', color: 'black', marginTop: '10px'}}>
+    <CDBFooter className="shadow" style={{ backgroundColor: '#4285F4', color: 'black', marginTop: '10px'}}>
     <CDBBox display="flex" flex="column" className=" mx-auto py-5" style={{ width: '80%' }}>
       <CDBBox display="flex" justifyContent="between" className="flex-wrap">
         <CDBBox>
@@ -20,7 +20,7 @@ const footer = () => {
               src="/logol.png"
               width="30px"
             />
-            <span className="ml-3 h5 font-weight-bold">Bulurum.com</span> 
+            <span className="ml-3 h5 font-weight-bold">Findme.com</span> 
           </a>
           <br/>
           <p>Ünalan Mah. Libadiye Cad. No:82F, G Blok, Üsküdar<br/>İstanbul, Üsküdar, 34700</p>
