@@ -3,7 +3,10 @@ header("Access-Control-Allow-Origin: *");
 header('Content-Type: application/json; charset=utf-8');
 include 'config_db.php';
 
-$sql = "SELECT *  FROM isletmeler WHERE kategori IN ('LOKANTA VE RESTORANTLAR')";
+$sql = "SELECT *  FROM isletmeler where kategori like '%".$_GET['kategori']."%' ";
+// "SELECT *  FROM isletmeler where isletme_adi like '%".$_GET['searchtext']."%' ";
+//"SELECT *  FROM isletmeler where isletme_id=".$_GET['id'];
+//"SELECT isletme_adi  FROM isletmeler";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -19,4 +22,3 @@ if ($result->num_rows > 0) {
 $conn->close();
 //SetHeader(200);
 echo json_encode($jsonArray);
-?>

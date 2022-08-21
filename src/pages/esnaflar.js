@@ -4,7 +4,6 @@ import React from 'react'
 import Database from '../components/Database/avmler_db';
 import CAFELER from '../components/Database/kafeler_db';
 import MARKET from '..//components/Database/marketler_db';
-import Container from 'react-bootstrap/Container';
 import Helmet from 'react-helmet';
 
 const esnaflar = () => {

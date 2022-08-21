@@ -3,7 +3,6 @@ import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
-import Container from 'react-bootstrap/Container';
 import Helmet from 'react-helmet';
 import { TabContact, TabLegalNotice, Hakkimizda, Pazarpolitik, Kariyer } from '../components';
 

@@ -17,17 +17,19 @@ import Kariyer from './pages/kariyer';
 import AnderaDB from './pages/About_Pages/ANDERA_ab';
 import BardenOT from './pages/About_Pages/ornek';
 import AcilDurumu from './pages/About_Pages/acil_durumu';
+import TekEsnaf from './pages/tek_esnaf';
+import REKLAM from './pages/reklam_servis';
 
 
 function App() {
+
   return (
-    <><Router>
-      
+    <>
+      <Router>
+
         <BrandBar />
         <Navbar />
-        <br></br>
-        <div class="container">
-          <Searchbar />
+        <div className="container" >
           <br></br>
           <Routes>
             <Route exact path='/' element={<AnaSayfa />} />
@@ -35,6 +37,7 @@ function App() {
             <Route path='/hakkinda' element={<Hakkinda />} />
             <Route path='/iletesim' element={<Iletesim />} />
             <Route path='/esnaflar' element={<Esnaflar />} />
+            <Route path='/esnaflar/:kategori' element={<TekEsnaf />} />
             <Route path='/ogrenci' element={<Ogrenci />} />
             <Route path='/yasaluyari' element={<Yasal />} />
             <Route path='/pazarpolitik' element={<PazarPolitik />} />
@@ -42,13 +45,15 @@ function App() {
             <Route path='/hakkimizda' element={<Hakkimizda />} />
             <Route path='/kariyer' element={<Kariyer />} />
             <Route path='/andera_ab' element={<AnderaDB />} />
+            <Route path='/reklam-verin' element={<REKLAM/>}/>
             <Route path='/hakkinda/:id' element={<BardenOT />} />
             <Route path='/acildurumu/:acilyerler' element={<AcilDurumu />} />
           </Routes>
         </div>
-     
+      </Router>
+      <Footer />
 
-    </Router><Footer /></>
+    </>
   );
 }
 

@@ -5,7 +5,6 @@ import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
-import Container from 'react-bootstrap/Container';
 import { Hakkimizda, TabContact, TabLegalNotice, Pazarpolitik, Kariyer } from '../components';
 import Helmet from 'react-helmet';
 

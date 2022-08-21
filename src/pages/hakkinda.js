@@ -1,11 +1,7 @@
 import React from 'react'
 import Accordion from 'react-bootstrap/Accordion';
-//import './hakkinda.css';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
-import Container from 'react-bootstrap/Container';
-//import img2 from ''
-
 
 
 const hakkinda = () => {
