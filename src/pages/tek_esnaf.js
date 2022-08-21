@@ -85,7 +85,7 @@ const Tek_esnaf = () => {
                     <p>Aylık 11 milyon’dan fazla tekil ziyaretçi findme.com’da
                         ihtiyacı olan ürün ve hizmetleri arıyor.<br /> Rakiplerinizin bir adım önünde olma fırsatını kaçırmayın!</p>
                     <h4 font-style="bold">Findme.com'da Reklam!</h4><br />
-                    <Button style={{ justifySelf: 'center' }} href='/anasayfa'>REKLAM VERIN!</Button>
+                    <Button style={{ justifySelf: 'center' }} href='/reklam-verin'>REKLAM VERIN!</Button>
 
                 </div>
             </div>
