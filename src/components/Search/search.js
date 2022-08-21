@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import Container from 'react-bootstrap/Container';
 
 export default class LiveSearch extends Component {
   constructor(props) {
@@ -40,13 +39,13 @@ export default class LiveSearch extends Component {
     if (this.cancelToken) {
       this.cancelToken.cancel()
     }
-    const searchtext = document.getElementById(`searchtext`).value;
+    const searchtext = document.getElementById(`searchtext`).value.toUpperCase();
     // Set axios token
     this.cancelToken = axios.CancelToken.source()
 
     // Make GET request with token
     await axios
-      .get('http://localhost/tum_hakkinda.php?searchtext=' + searchtext, {
+      .get('http://localhost/search_db_api.php?searchtext=' + searchtext, {
         cancelToken: this.cancelToken.token,
       })
       .then((res) => {

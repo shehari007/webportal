@@ -1,9 +1,6 @@
 //import axios from '..//../components/Database/axios_api/acil_durumu_axios';
 import axios from 'axios'
-import React, { Component } from 'react'
-
-
-import Container from 'react-bootstrap/Container';
+import React from 'react'
 import Table from 'react-bootstrap/Table';
 import Image from 'react-bootstrap/Image';
 import { useState, useEffect } from 'react'
