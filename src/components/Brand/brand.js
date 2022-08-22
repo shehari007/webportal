@@ -20,10 +20,10 @@ const brand = () => {
             Findme.com
           </Navbar.Brand>
           <h4 style={{ color: '#ffff', fontSize: '15px', marginTop: '5px' }}>
-            <img src='./callus.png' alt="" style={{ height: '30px', width: '30px' }} />952-2265-2255
-            <a href='https://www.facebook.com/sharer.php?u=http://localhost:3000/anasayfa' target="_blank" rel="noopener noreferrer"><img src='/fbshare.png' alt='smallb' style={{ height: '16px', width: '16px', marginLeft: '10px' }} /></a>
-            <a href='https://www.instagram.com/' target="_blank" rel="noopener noreferrer"><img src='./inshare.png' alt="SS" style={{ height: '16px', width: '16px', marginLeft: '10px' }} /></a>
-            <a href='https://www.twitter.com/' target="_blank" rel="noopener noreferrer"><img src='./twshare.png' alt="SS" style={{ height: '16px', width: '16px', marginLeft: '10px' }} /></a>
+            <img src={require('..//..//callus.png')} alt="" style={{ height: '30px', width: '30px' }} />952-2265-2255
+            <a href='https://www.facebook.com/sharer.php?u=http://localhost:3000/anasayfa' target="_blank" rel="noopener noreferrer"><img src={require('..//..//fbshare.png')} alt='smallb' style={{ height: '16px', width: '16px', marginLeft: '10px' }} /></a>
+            <a href='https://www.instagram.com/' target="_blank" rel="noopener noreferrer"><img src={require('..//..//inshare.png')} alt="SS" style={{ height: '16px', width: '16px', marginLeft: '10px' }} /></a>
+            <a href='https://www.twitter.com/' target="_blank" rel="noopener noreferrer"><img src={require('..//..//twshare.png')} alt="SS" style={{ height: '16px', width: '16px', marginLeft: '10px' }} /></a>
           </h4>
 
         </Container>
