@@ -44,9 +44,9 @@ const newFooter = () => {
                 <div class="d-flex justify-content-center py-4 border-top" style={{ backgroundColor: 'black', color: 'white' }}>
 
                     <p>© 2021 Findme.com Network, Inc. Tüm hakları saklıdır..</p>
-                    <a href='https://www.facebook.com/sharer.php?u=http://localhost:3000/anasayfa' target="_blank" rel="noopener noreferrer"><img src='/fbshare.png' alt='smallb' style={{ height: '16px', width: '16px', marginLeft: '10px' }} /></a>
-                    <a href='https://www.instagram.com/' target="_blank" rel="noopener noreferrer"><img src='./inshare.png' alt="SS" style={{ height: '16px', width: '16px', marginLeft: '10px' }} /></a>
-                    <a href='https://www.twitter.com/' target="_blank" rel="noopener noreferrer"><img src='./twshare.png' alt="SS" style={{ height: '16px', width: '16px', marginLeft: '10px' }} /></a>
+                    <a href='https://www.facebook.com/sharer.php?u=http://localhost:3000/anasayfa' target="_blank" rel="noopener noreferrer"><img src={require('..//..//fbshare.png')} alt='smallb' style={{ height: '16px', width: '16px', marginLeft: '10px' }} /></a>
+            <a href='https://www.instagram.com/' target="_blank" rel="noopener noreferrer"><img src={require('..//..//inshare.png')} alt="SS" style={{ height: '16px', width: '16px', marginLeft: '10px' }} /></a>
+            <a href='https://www.twitter.com/' target="_blank" rel="noopener noreferrer"><img src={require('..//..//twshare.png')} alt="SS" style={{ height: '16px', width: '16px', marginLeft: '10px' }} /></a>
                 </div>
             </footer>
         </>
