@@ -5,10 +5,12 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import React from 'react'
+import React, { Component } from 'react'
+import axios from 'axios';
 
 const newNavbar = () => {
-
+  
+  
   return (
     <>
       {['md'].map((expand) => (
@@ -60,12 +62,14 @@ const newNavbar = () => {
                 <Form className="d-flex">
                   <Form.Control
                     type="search"
-                    placeholder="Search"
+                    placeholder="Ne?Nerede?"
                     className="me-2"
                     aria-label="Search"
+                    id="searchtext"
+                    
 
                   />
-                  <Button variant="success">Search</Button>
+                  <Button variant="success">Gonder</Button>
 
                 </Form>
               </Offcanvas.Body>
@@ -76,6 +80,7 @@ const newNavbar = () => {
 
     </>
   )
+  
 }
 
 export default newNavbar
