@@ -419,7 +419,11 @@ const HomePage = () => {
         <div className="col" style={{ margin: '2%', textAlign: 'center' }}>
           <h5>Size İş Getirir!</h5>
           <p>Aylık 11 milyon’dan fazla tekil ziyaretçi findme.com’da
-            ihtiyacı olan ürün ve hizmetleri arıyor.<br /> Rakiplerinizin bir adım önünde olma fırsatını kaçırmayın!</p>
+          findme.com’un yıllardır tecrübe edindiği bir sektörde, şirketimizin yeni platformu olan findme.com’un
+          bir parçası olmak,genç ve dinamik ekibimize katılmak ister misiniz? findme.com’da her gün kendimizi geliştirmek,
+          çalışanlarımızı eğitmek için çok çalışıyoruz. Sizler de aramıza katılmak, farklı projelerde yer almak,kendinize 
+          her gün yeni birşey katmak isterseniz açık pozisyonlarımıza aşağıdan ulaşabilirsiniz.
+.<br /></p>
           <h4 font-style="bold">Findme.com'da Reklam!</h4><br />
           <Button style={{ justifySelf: 'center' }} href='/reklam-verin'>REKLAM VERIN!</Button>
 
