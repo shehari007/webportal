@@ -4,13 +4,14 @@ import HomepageComponents from '../components/Database/homepage';
 
 
 
-
 const anasayfa = () => {
   return (
     <>
-    <HomepageComponents />
+
+      <HomepageComponents />
+
     </>
   )
- }
+}
 
 export default anasayfa

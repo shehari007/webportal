@@ -4,6 +4,7 @@ import { Navbar, BrandBar, Footer, Searchbar } from './components';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 import AnaSayfa from './pages/anasayfa';
 import Hakkinda from './pages/hakkinda';
 import Esnaflar from './pages/esnaflar';
@@ -22,11 +23,15 @@ import REKLAM from './pages/reklam_servis';
 
 
 function App() {
-
+  const myStyle = {
+    backgroundImage:
+      "url('/backwhite.jpg')",
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+  };
   return (
     <>
       <Router>
-
         <BrandBar />
         <Navbar />
         <div className="container" >
@@ -45,11 +50,12 @@ function App() {
             <Route path='/hakkimizda' element={<Hakkimizda />} />
             <Route path='/kariyer' element={<Kariyer />} />
             <Route path='/andera_ab' element={<AnderaDB />} />
-            <Route path='/reklam-verin' element={<REKLAM/>}/>
+            <Route path='/reklam-verin' element={<REKLAM />} />
             <Route path='/hakkinda/:id' element={<BardenOT />} />
             <Route path='/acildurumu/:acilyerler' element={<AcilDurumu />} />
           </Routes>
         </div>
+
       </Router>
       <Footer />
 

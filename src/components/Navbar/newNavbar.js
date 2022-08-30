@@ -7,10 +7,10 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import React, { Component } from 'react'
 import axios from 'axios';
+import { NewSearch } from '..//Search/NewSearch';
 
 const newNavbar = () => {
-  
-  
+
   return (
     <>
       {['md'].map((expand) => (
@@ -59,19 +59,11 @@ const newNavbar = () => {
                   <Nav.Link href="/iletesim" style={{ textDecoration: 'none', color: 'white', fontWeight: '600' }}>İletişim Geç</Nav.Link>
 
                 </Nav>
-                <Form className="d-flex">
-                  <Form.Control
-                    type="search"
-                    placeholder="Ne?Nerede?"
-                    className="me-2"
-                    aria-label="Search"
-                    id="searchtext"
-                    
+                <NewSearch/>
+                <Button variant='success'>Gonder</Button>
+               
 
-                  />
-                  <Button variant="success">Gonder</Button>
 
-                </Form>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>
@@ -80,7 +72,7 @@ const newNavbar = () => {
 
     </>
   )
-  
+
 }
 
 export default newNavbar
