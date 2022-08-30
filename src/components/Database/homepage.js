@@ -118,6 +118,7 @@ const HomePage = () => {
   return (
 
     <>
+    
       <div className='row'>
         <div className='col-md-6'>
           <Image fluid={true} src="/map_compas.gif" alt='banner' height="auto" width='auto' />
@@ -426,6 +427,7 @@ const HomePage = () => {
         </div>
       </div>
       <br />
+     
     </>
   );
 }
