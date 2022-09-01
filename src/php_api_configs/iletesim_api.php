@@ -17,4 +17,3 @@ if($sorgu->insert_id){
 $conn->close();
 //SetHeader(200);
 echo json_encode($durum);
-?>
