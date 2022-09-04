@@ -23,12 +23,7 @@ import REKLAM from './pages/reklam_servis';
 
 
 function App() {
-  const myStyle = {
-    backgroundImage:
-      "url('/backwhite.jpg')",
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-  };
+  
   return (
     <>
       <Router>
