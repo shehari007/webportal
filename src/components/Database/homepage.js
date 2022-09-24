@@ -37,7 +37,7 @@ const HomePage = () => {
   useEffect(() => {
     const acilTab2 = async () => {
       const res = await axios(`http://localhost/hastanesi_tab_api.php`);
-      console.log(res.data);
+      console.log("aciltab2" + res.data);
       setacilTab2(res.data);
     };
     acilTab2();
@@ -158,16 +158,17 @@ const HomePage = () => {
                     <tr>
                     </tr>
                   </thead>
-                  {acilTab2.map((data, index) => {
+                  
+                  {acilTab2 !== '0 results[]'? acilTab2.map((data, index) => {
                     return <><tbody>
                       <tr>
                         <td key={index}>{index + 1}</td>
                         <td><a href={data.hak_adresi} style={{ textDecoration: 'underline', color: 'black' }}>{data.isletme_adi}</a></td>
                         <td><a href={data.hak_adresi}>Detaylar..</a></td>
                       </tr>
-                    </tbody>
+                    </tbody> 
                     </>
-                  })}
+                  }):null}
                 </Table>
               </div>
             </Tab>
